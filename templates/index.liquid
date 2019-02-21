@@ -1,0 +1,24 @@
+<section id="clinic-header">
+        {% section 'header' %}
+        <p class='title'>Clinic</p>
+</section>
+
+<section id="clinic-body">
+
+    {% section 'clinic_page_content'%}
+
+    <div id='form-div'>
+        {% form 'contact' %}
+            {% if form.posted_successfully? %} Thank you for signing up! {% endif %}
+            {{ form.errors | default_errors }}
+            <h2 id="form-header">Increase your energy</h2>
+            <p>Learn how to increase your energy in just 5 days and receive regular newsletters. Sign Up for my free 5-part videos to get started.<p>
+            <input type="text" id="ContactFormName" name="contact[name]" placeholder="Name">
+            <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="Email">
+            <button type="submit" id='signUp'>Sign Up</button>
+        {% endform %}
+    </div>
+</section>
+
+{% section 'page_footer' %}
+

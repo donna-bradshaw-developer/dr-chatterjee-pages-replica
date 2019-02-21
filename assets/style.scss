@@ -1,0 +1,323 @@
+@font-face{
+    font-family: 'Circular-Standard', sans-serif;
+    src: url('./font/CircularStd-Black.ttf')
+}
+
+@font-face{
+    font-family: 'Circular-Bold', sans-serif;
+    src: url('./font/CircularStd-Bold.ttf')
+}
+
+@font-face{
+    font-family: 'Circular-Book', sans-serif;
+    src: url('./font/CircularStd-Book.ttf')
+}
+
+@font-face{
+    font-family: 'Circular-Medium', sans-serif;
+    src: url('./font/CircularStd-Medium.ttf')
+}
+
+html, body{
+    font-family: 'Circular-Book', sans-serif; 
+    font-weight: lighter;
+    line-height: 1.5em;
+    position: relative;
+}
+
+html, body, .press-outlet > p{
+    margin: 0px;
+}
+
+.menu-links, button, .title, #media-kit{
+    color: white;
+}
+
+button, #media-kit{
+    background-color: rgb(31, 13, 217);
+}
+
+.menu-links{
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.header-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo > img, .press-outlet > img, .press-outlet > p, .press-outlet > a{
+    padding: 20px;
+}
+
+#logo > img{
+    width: 200px;
+    height: auto;
+}
+
+li, #social-icons > img{
+    margin: 20px 0px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 30px;
+    width: 50%;
+    font-size: 1.01em;
+    margin: 10px 25% 0px;
+}
+
+input{
+    padding: 15px;
+    font-size: 15px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+}
+
+.title{
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    font-size: 5.5em;
+    font-weight: 500;
+}
+
+#clinic-header{
+    background: url('../assets/hero-clinicpage-mobile.png');
+    background-size: 100%;
+}
+
+#clinic-header, #press-header{
+    background-repeat: no-repeat;
+    height: 714px;
+    background-position: top left;
+    position: relative;
+}
+
+#clinic-content-header, #form-header{
+    font-weight: 500;
+}
+
+#clinic-body{
+    background-color: rgb(231, 242, 239);
+}
+
+#clinic-content, #form-div, #clinic-body, #media-kit{
+    padding: 25px;
+}
+
+#form-div{
+    background-color: white;
+    margin: 10px;
+}
+
+#press-header{
+    background: url('../assets/hero-presspage-mobile.png');
+    background-size: cover;
+}
+
+#press-content{
+    height: 1450px;
+    overflow: hidden;
+}
+
+.press-outlet{
+    text-align: center;
+    margin: 20px;
+    padding: 25px 25px 45px 25px;
+}
+
+.read-more-links{
+    color: rgb(31, 13, 217);
+    font-weight: bold;
+}
+
+#media-kit img{
+    width: 20px;
+    height: 30px;
+    margin: 0px 10px -10px 0px;
+}
+
+#media-kit > div{
+    padding-top: 25px;
+}
+
+#view-more{
+    margin-bottom: 30px;
+}
+
+#page-footer, .press-outlet{
+    background-color: whitesmoke;
+}
+
+#footer-links-div{
+    padding: 0px 50px;
+}
+
+.footer-links{
+    display: block;
+    font-size: 1.1em;
+    padding: 20px 0px;
+}
+
+#copyright, #social-icons > img{
+    margin-left: 50px;
+}
+
+@media only screen and (min-width: 650px){
+    #logo > img{
+        width: 100%;
+    }
+    #clinic-header{
+        background: url('../assets/hero-clinicpage-desktop.png');
+        background-size: cover;
+        height: 700px;
+    }
+
+    #press-header{
+        background: url('../assets/hero-presspage-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        height: 650px;
+    }
+
+    #press-content{
+        height: 1350px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 850px){
+    #clinic-header{
+        height: 750px;
+    }
+
+    #footer-links-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-links{
+        display: inline;
+        font-size: 1em;
+    }
+
+    #download{
+        display: block;
+        margin-left: 30px;
+    }
+
+    #press-content{
+        display:flex;
+        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        height: auto;
+    }
+
+    .press-outlet{
+        width: 310px;
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .title{
+        font-size: 7em;
+    }
+
+    .menu-links{
+        font-size: 1.5em;
+        margin-right: 50px;
+    }
+
+    #media-kit > div{
+        width: 600px;
+        padding-top: 0px;
+    }
+
+    #media-kit, #clinic-body{
+        display:flex;
+        align-items: center;
+    }
+
+    #media-kit{
+        justify-content: space-between;
+    }
+
+    #clinic-body{
+       flex-flow: row wrap;
+       justify-content: space-evenly;
+    }
+
+    #clinic-content, #form-div{
+        width: 450px;
+        flex-basis: 40%;
+    }
+
+    input{
+        width: 85%;
+    }
+
+    .press-outlet{
+        width: 250px;
+        flex-basis: 25%;
+    }
+
+    #view-more{
+        width: 250px;
+        margin: 0px 40% 30px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1215px){
+    #clinic-header{
+        height: 750px;
+    }
+
+    #clinic-body{
+        justify-content: space-around;
+     }
+
+    #clinic-content{
+        padding: 50px;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    #page-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social-icons{
+        margin-right: 50px;
+    }
+
+    #social-icons > img{
+        margin-left: 15px;
+    }
+
+    .footer-links{
+        margin-right: 20px;
+    }
+}
+

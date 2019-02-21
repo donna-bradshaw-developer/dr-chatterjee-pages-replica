@@ -1,0 +1,18 @@
+<section id="press-header">
+    {% section 'header' %}
+    <p class='title'>{{ page.title }}</p>
+</section>
+
+<div id='media-kit'>
+    <span>{{ 'bookIcon.png' | asset_url | img_tag }}Media Kit <a id='download' class='underline'> Download Here</a></span>
+
+    <div>For Speaking Engagements and Corporate Enquiries please call:  Sophie Laurimore at Factual Management   /  020 7484 5133   /   <span class='underline'>sl@factualmanagement.com</span></div>
+</div>
+
+<section id="press-body">
+    {% section 'press_page_content' %}
+
+    <button id='view-more'>View More</button>
+</section>
+
+{% section 'page_footer' %}

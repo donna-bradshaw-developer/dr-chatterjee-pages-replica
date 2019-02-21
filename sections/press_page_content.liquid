@@ -1,0 +1,38 @@
+<div id='press-content'>
+    {% for block in section.blocks %}
+        <div class="press-outlet" {{ block.shopify_attributes }}>
+            {% case block.type %}
+                {% when 'outlet' %}
+                    <img src="{{ block.settings.logo | img_url: 'small' }}" />
+                    <p>{{ block.settings.press_text }}</p>
+                    <a href='' class='read-more-links'>Read More</a>
+            {% endcase %}
+        </div>
+    {% endfor %}
+</div>
+
+{% schema %}
+    {
+        "name": "Press Recognition",
+        "blocks": [
+            {
+                "type": "outlet",
+                "name": "Press Outlet",
+                "settings": [
+                    {
+                        "id": "logo",
+                        "type": "image_picker",
+                        "label": "Logo"
+                    },
+                    {
+                        "id": "press_text",
+                        "type": "textarea",
+                        "label": "Outlet Text",
+                        "placeholder": "Input Text Here"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
+

@@ -1,0 +1,24 @@
+<div id='clinic-content'>
+    <h2 id='clinic-content-header'>{{section.settings.clinic_header}}</h2>
+    <div id='clinic-content-body'>{{section.settings.clinic_body}}</div>
+</div>
+
+{% schema %}
+    {
+        "name": "Clinic Page Content",
+        "settings": [
+            {
+                "type": "text",
+                "id": "clinic_header",
+                "default": "Header",
+                "label": "Clinic Content Header"
+            },
+            {
+                "type": "html",
+                "id": "clinic_body",
+                "default": "<p>Body</p>",
+                "label": "Clinic HTML Content Body"
+            }
+        ]
+    }
+{% endschema %}
