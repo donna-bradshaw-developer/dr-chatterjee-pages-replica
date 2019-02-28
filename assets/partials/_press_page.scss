@@ -1,0 +1,94 @@
+#press-header{
+    background-repeat: no-repeat;
+    height: 714px;
+    background-position: top left;
+    position: relative;
+    background: url('../assets/hero-presspage-mobile.png');
+    background-size: cover;
+    @include small-min{
+        background: url('../assets/hero-presspage-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        height: 650px; 
+    } 
+}
+
+#media-kit{
+    padding: 25px;
+    background-color: rgb(31, 13, 217);
+    color: white;
+    @include large-min{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }  
+    span{
+        img{
+            width: 20px;
+            height: 30px;
+            margin: 0px 10px -10px 0px;
+        }
+        #download{
+            @include med-min{
+                display: block;
+                margin-left: 30px;
+            }  
+        }
+    }
+    div{
+        padding-top: 25px;
+        @include large-min{
+            width: 600px;
+            padding-top: 0px; 
+        }  
+    }
+}
+
+#press-content{
+    height: 1450px;
+    overflow: hidden;
+    @include small-min{
+        height: 1350px;
+        overflow: hidden; 
+    }
+    @include med-min{
+        display:flex;
+        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        height: auto;
+    }   
+    .press-outlet{
+        text-align: center;
+        margin: 20px;
+        padding: 25px 25px 45px 25px;
+        background-color: whitesmoke;
+        @include med-min{
+            width: 310px;
+            height: 280px;
+        }  
+        @include large-min{
+            width: 250px;
+            flex-basis: 25%;
+        }  
+        img, p, a{
+            padding: 20px;
+        }
+        p{
+            margin: 0px;
+        }
+        .read-more-links{
+            color: rgb(31, 13, 217);
+            font-weight: bold;
+        }
+    }
+}
+
+#view-more{
+    margin-bottom: 30px;
+    @include large-min{
+        width: 250px;
+        margin: 0px 40% 30px;
+    } 
+}

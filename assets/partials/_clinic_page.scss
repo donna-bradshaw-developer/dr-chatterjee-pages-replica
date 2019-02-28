@@ -1,0 +1,75 @@
+#clinic-header{
+    background: url('../assets/hero-clinicpage-mobile.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 714px;
+    background-position: top left;
+    position: relative;
+    @include small-min{
+        background: url('../assets/hero-clinicpage-desktop.png');
+        background-size: cover;
+        height: 700px;  
+    }
+    @include med-min{
+        height: 750px;
+    } 
+    @include x-large-min{
+        height: 750px;
+    }   
+}
+
+#clinic-body{
+    background-color: rgb(231, 242, 239);
+    padding: 25px;
+    @include large-min{
+        display:flex;
+        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    } 
+    @include x-large-min{
+        justify-content: space-around;
+    }
+    #clinic-content{
+        padding: 25px;
+        @include large-min{
+            width: 450px;
+            flex-basis: 40%;
+        } 
+        @include x-large-min{
+            padding: 50px;
+        }
+        #clinic-content-header{
+            font-weight: 500px;
+        }
+        li{
+            margin: 20px 0px;
+        }
+    }
+    #form-div{
+        background-color: white;
+        margin: 10px;
+        padding: 25px;
+        @include large-min{
+            width: 450px;
+            flex-basis: 40%;
+        } 
+        #form-header{
+            font-weight: 500px;
+        }
+        input{
+            padding: 15px;
+            font-size: 15px;
+            margin: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 2px solid whitesmoke;
+            @include large-min{
+                width: 85%;
+            } 
+            @include x-large-min{
+                width: 90%;
+            }
+        }
+    }
+}

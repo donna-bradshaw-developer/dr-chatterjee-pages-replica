@@ -1,4 +1,5 @@
 development:
-  password: $DEV_PASSWORD
-  theme_id: $DEV_ID
-  store: $DEV_STORE
+  password: 5c91f96ac043812baf485dbd8ba5b583
+  theme_id: "43106467917"
+  store: donnab-test-store.myshopify.com
+

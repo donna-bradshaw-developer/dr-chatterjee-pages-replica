@@ -1,0 +1,48 @@
+@font-face{
+    font-family: 'Circular-Standard', sans-serif;
+    src: url('./font/CircularStd-Black.ttf')
+}
+
+@font-face{
+    font-family: 'Circular-Bold', sans-serif;
+    src: url('./font/CircularStd-Bold.ttf')
+}
+
+@font-face{
+    font-family: 'Circular-Book', sans-serif;
+    src: url('./font/CircularStd-Book.ttf')
+}
+
+@font-face{
+    font-family: 'Circular-Medium', sans-serif;
+    src: url('./font/CircularStd-Medium.ttf')
+}
+
+$small: 650px;
+$medium: 850px;
+$large: 1000px;
+$x-large: 1215px;
+
+@mixin small-min{
+    @media only screen and (min-width: $small){
+        @content;
+    }
+}
+
+@mixin med-min{
+    @media only screen and (min-width: $medium){
+        @content;
+    }
+}
+
+@mixin large-min{
+    @media only screen and (min-width: $large){
+        @content;
+    }
+}
+
+@mixin x-large-min{
+    @media only screen and (min-width: $x-large){
+        @content;
+    }
+}

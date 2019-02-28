@@ -1,0 +1,31 @@
+@import './partials/variables';
+@import "./partials/header";
+@import './partials/press_page';
+@import './partials/footer';
+@import './partials/clinic_page';
+
+html, body{
+    font-family: 'Circular-Book', sans-serif; 
+    font-weight: lighter;
+    line-height: 1.5em;
+    position: relative;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    padding: 10px;
+    border-radius: 30px;
+    width: 50%;
+    font-size: 1.01em;
+    margin: 10px 25% 0px;
+    background-color: rgb(31, 13, 217);
+    color: white;
+}
+
+.underline{
+    text-decoration: underline;
+}
