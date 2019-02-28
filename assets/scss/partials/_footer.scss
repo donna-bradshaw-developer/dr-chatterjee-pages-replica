@@ -25,20 +25,21 @@
             }
         }
     }
-}
-
-#social-icons{
-    @include x-large-min{
-        margin-right: 50px;
-    }
-    img{
-        margin: 20px 0px;
-        margin-left: 50px;
+    #social-icons{
         @include x-large-min{
-            margin-left: 15px;
+            margin-right: 50px;
+        }
+        img{
+            margin: 20px 0px;
+            margin-left: 50px;
+            @include x-large-min{
+                margin-left: 15px;
+            }
         }
     }
 }
+
+
 
 #copyright{
     margin-left: 50px;
